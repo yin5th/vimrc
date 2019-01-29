@@ -311,3 +311,5 @@ set go-=L
  " 关闭vi的一致性模式，避免以前版本的一些Bug和局限  
 set nocompatible  
 
+" 不限制复制的行数
+" set viminfo='1000
