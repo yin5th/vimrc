@@ -1,20 +1,20 @@
 " 开启语法高亮
-syntax on  
+syntax on
 
-" 设置字体  
+" 设置字体
 set guifont=Monaco\ 12
 
-" 设置历史记录条数  
-set history=2000  
+" 设置历史记录条数
+set history=2000
 
-" 检测文件类型  
-filetype on  
+" 检测文件类型
+filetype on
 
-" 针对不同的文件，采用不同的缩进方式  
-filetype indent on  
+" 针对不同的文件，采用不同的缩进方式
+filetype indent on
 
-" 允许插件  
-filetype plugin on  
+" 允许插件
+filetype plugin on
 
 " 启动自动补全
 filetype plugin indent on
@@ -25,9 +25,9 @@ set autoread
 " 启动后不显示提示
 "set shortmess=atI
 
-" 设置取消备份，禁止临时文件生成  
-set nobackup  
-set noswapfile  
+" 设置取消备份，禁止临时文件生成
+set nobackup
+set noswapfile
 
 " create undo file
 set undolevels=1000 " how many undos
@@ -39,16 +39,16 @@ endif
 
 "set wildignore=*.swp,*.bak,*.pyc,*.class,.svn
 
-" 显示当前横竖线  
-"set cursorline  
-"set cursorcolumn  
+" 显示当前横竖线
+"set cursorline
+"set cursorcolumn
 
 " 设置退出Vim之后内容显示在终端屏幕，可以用于查看和复制
 " 好处:误删什么，如果以前屏幕打开可以用来找回
 " set t_ti= t_te=
 
-" 设置在Vim中可以使用鼠标，防止终端无法拷贝  
-set mouse=a  
+" 设置在Vim中可以使用鼠标，防止终端无法拷贝
+set mouse=a
 
 "==========================================
 " Display Settings
@@ -69,32 +69,32 @@ set showmode
 " 命令行（在状态行下）的高度，默认为1，这里是2
 set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
 
-" 总是显示状态栏(Powerline需要2行)  
-set laststatus=2  
+" 总是显示状态栏(Powerline需要2行)
+set laststatus=2
 
-" 显示行号  
-set number  
+" 显示行号
+set number
 
 " 指定不折行
-"set nowrap  
+"set nowrap
 
-" 设置代码匹配,包括括号匹配情况  
-set showmatch  
+" 设置代码匹配,包括括号匹配情况
+set showmatch
 
 " how many tenths of a second to blink when matching brackets
 " setmatchtime=2
 
-" 开启及时搜索(is)  
-set incsearch  
+" 开启及时搜索(is)
+set incsearch
 
-" 设置搜索高亮(hlsearch)  
-set hls  
+" 设置搜索高亮(hlsearch)
+set hls
 
-" 设置搜索时忽略大小写  
-set ignorecase  
+" 设置搜索时忽略大小写
+set ignorecase
 
-" 当搜索的时候尝试smart  
-set smartcase  
+" 当搜索的时候尝试smart
+set smartcase
 
 " 设置代码折叠
 "set foldenable
@@ -108,35 +108,32 @@ set smartcase
 "set foldmethod=indent
 "set foldlevel=99
 
-" 设置C/C++方式自动对齐  
-set autoindent  
-set cindent  
-set smartindent  
+" 设置C/C++方式自动对齐
+set autoindent
+set cindent
+set smartindent
 
-" 设置tab宽度  
-set tabstop=4  
+" 设置tab宽度
+set tabstop=4
 
 
-" 设置自动对齐空格数  
-set shiftwidth=4  
+" 设置自动对齐空格数
+set shiftwidth=4
 
 " 按退格键时可以一次删除4个空格
 "set softtabstop=4
 
- " 编辑的时候将所有的tab设置为空格(expandtab)  
- set et  
+ " 编辑的时候将所有的tab设置为空格(expandtab)
+ set et
 
- " 使用Backspace直接删除tab  
- set smarttab  
+ " 使用Backspace直接删除tab
+ set smarttab
 
-" 不在单词中间折行  
-set lbr  
+" 不在单词中间折行
+set lbr
  "==========================================
  " FileEncode Settings
  "==========================================
-
-     
-
 
 inoremap ( ()<Left>
 inoremap [ []<Left>
@@ -276,42 +273,42 @@ nnoremap <F10> :cp<CR>
 "    set guioptions-=r
 "    set guioptions-=L
 "    set guitablabel=%M\ %t
-"    set showtabline=1 
-"    set linespace=2 
-"    set noimd   
+"    set showtabline=1
+"    set linespace=2
+"    set noimd
 "    set t_Co=256
 "endif
 
-" 设置主题  
+" 设置主题
 "set background=dark
-"colorscheme molokai  
+"colorscheme molokai
 "colorscheme solarized
 set t_Co=256
 
-" 添加水平滚动条  
-"set guioptions+=b  
+" 添加水平滚动条
+"set guioptions+=b
 
-" 取消菜单栏和导航栏  
-set guioptions-=m  
-set guioptions-=T  
+" 取消菜单栏和导航栏
+set guioptions-=m
+set guioptions-=T
 
 " 去除左右两边滚动条
 set go-=r
 set go-=L
 
-" 设置水平行数和竖直列数  
-"set lines=35  
-"set columns=99  
+" 设置水平行数和竖直列数
+"set lines=35
+"set columns=99
 
-" 使pathogen生效(插件管理器,只需将插件放入bundle，将pathogen.vim放入autoload即可)  
-"execute pathogen#infect()  
+" 使pathogen生效(插件管理器,只需将插件放入bundle，将pathogen.vim放入autoload即可)
+"execute pathogen#infect()
 "
 "==========================================
 " Vundle Settings
 "==========================================
 
- " 关闭vi的一致性模式，避免以前版本的一些Bug和局限  
-set nocompatible  
+ " 关闭vi的一致性模式，避免以前版本的一些Bug和局限
+set nocompatible
 
 " 不限制复制的行数
 set viminfo='1000
