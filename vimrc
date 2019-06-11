@@ -138,10 +138,12 @@ set lbr
      
 
 
-inoremap ( ()i 
-inoremap [ []i 
-inoremap { {}i 
-inoremap < <>i 
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap < <><Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
 " 设置编码方式  
  set encoding=utf-8  
 
@@ -312,4 +314,4 @@ set go-=L
 set nocompatible  
 
 " 不限制复制的行数
-" set viminfo='1000
+set viminfo='1000
